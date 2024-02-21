@@ -1,0 +1,192 @@
+
+
+<!-- <head> -->
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .container>main {
+      display: flex;
+      min-height: 300px;
+    }
+
+    .container>main>article {
+      background-color: whitesmoke;
+    }
+
+    .container>main>aside {
+      background-color: white;
+    }
+
+    .container>footer {
+      background-color: darkblue;
+      height: 80px;
+    }
+  </style>
+<!-- </head> -->
+
+<!-- <body > -->
+  <div class="container">
+    <header>
+      <div>
+        <img class="w-100" src="assets/images/banner.png" alt="#" height="200px">
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"> FPT Polytechnic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gioithieu.html"> Giới thiệu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="lienhe.html"> Liên hệ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gopy.html"> Góp ý</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hoidap.html"> Hỏi đáp</a>
+        </li>
+      </ul>
+      <div class="ml-auto">
+        <select class="no-border" (change)="onSelect($event)">
+          <option >Tài khoản</option>
+          <option value="register-page">Đăng ký</option>
+          <option value="login-page">Đăng nhập</option>
+        </select>
+              
+        <!-- <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Tài khoản
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="dangky.html"> Đăng ký</a></li>
+              <li><a class="dropdown-item" href="dangnhap.html"> Đăng nhập</a></li>
+              <li><a class="dropdown-item" href="quenmatkhau.html"> Quên mật khẩu</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="dangxuat.html"> Đăng xuất</a></li>
+              <li><a class="dropdown-item" href="doimatkhau.html"> Đổi mật khẩu</a></li>
+              <li><a class="dropdown-item" href="capnhattaikhoan.html">Cập nhật tài khoản</a></li>
+            </ul>
+          </li>
+        </ul> -->
+      </div>
+    </nav>
+    <main>
+      <article class="col-9">
+        <div>
+          <div class="row">
+            <div class="col-6">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="assets/images/logos/ADAV.jpg" class="w-75 me-auto">
+                </div>
+                <div class="card-header bg-primary text-white">
+                  <button>Lập trình Android nâng cao</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="assets/images/logos/WEBU.jpg" class="w-75 me-auto">
+                </div>
+                <div class="card-header bg-primary text-white">
+                  <button>Xây dựng trang web</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="assets/images/logos/DBBS.png" class="w-75 me-auto">
+                </div>
+                <div class="card-header bg-primary text-white">
+                  <button>Cơ sở dữ liệu</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="assets/images/logos/DBAV.png" class="w-75 me-auto">
+                </div>
+                <div class="card-header bg-primary text-white">
+                  <button>SQL Sever</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Page navigation example" style="margin-left: 320px;">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+      <aside class="col-3">
+        <div class="card mt-0">
+          <div class="card-header bg-info text-white"><i class="bi bi-list-stars"></i> DANH MỤC</div>
+          <div class="card-body p-0">
+            <ul class="list-group bg-primary">
+              <li class="list-group-item ">Kiểm thử triển khai</li>
+              <li class="list-group-item ">SQL Server</li>
+              <li class="list-group-item ">Điện toán đám mây</li>
+              <li class="list-group-item ">Lập trình PHP</li>
+              <li class="list-group-item ">Lập trình Android nâng cao</li>
+              <li class="list-group-item ">Lập trình Android cơ bản</li>
+              <li class="list-group-item ">Thiết kế layout</li>
+              <li class="list-group-item ">Thiết kế giao diện trên Android</li>
+              <li class="list-group-item ">Quản lý dự án với Agile</li>
+              <li class="list-group-item ">Internet Marketing</li>
+              <li class="list-group-item ">Lập trình hướng đối tượng với Java</li>
+              <li class="list-group-item ">Lập trình ASP.NET</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <a class="float-end" href="https://www.facebook.com/baophucngusi/">
+      </a>
+      <p class="m-auto text-center text-white">PS36096-NguyenBaoPhuc
+        <br>
+        Email: phucnbps36096fpt.edu.vn
+        <br>
+        Số điện thoại : 0973134202
+      </p>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<!-- </body> -->
+

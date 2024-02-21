@@ -1,0 +1,5 @@
+.no-border {
+    border: none; /* Loại bỏ viền */
+    outline: none; /* Loại bỏ viền khi được chọn */
+  }
+  
